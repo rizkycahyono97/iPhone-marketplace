@@ -1,0 +1,322 @@
+/* ---------------------- */
+/* About Us jumbotron */
+/* ---------------------- */
+
+.about-jumbotron {
+  background-color: #111518;
+  padding: 80px 20px 200px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.about-jumbotron h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+/* --------------------- */
+/* End of About Us jumbotron */
+/* ---------------------- */
+
+/* --------------------- */
+/* Gambar bawah jumbotron */
+/* ---------------------- */
+.image-container {
+  position: absolute;
+  bottom: -200px; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.image-container img {
+  width: 1400px;
+  /* max-width: 1300px;  */
+  height: auto;
+  border-radius: 15px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .about-jumbotron h1 {
+    font-size: 3rem;
+  }
+
+  .image-container img {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .about-jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-about li {
+    font-size: 1rem;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+/* --------------------- */
+/* End of Gambar bawah jumbotron */
+/* ---------------------- */
+
+
+/* --------------------- */
+/* office member */
+/* ---------------------- */
+.office-member-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; 
+  margin-top: 480px; 
+  padding: 20px;
+}
+
+.office-member-column {
+  background-color: #E4E0E1; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+}
+
+.office-member-satu:hover {
+  background-color: #FFC750;
+  color: #ffffff;
+}
+
+.office-member-dua:hover {
+  background-color: #758694;
+  color: #ffffff;
+}
+
+.office-member-tiga:hover {
+  background-color: #0A917F;
+  color: #ffffff;
+}
+
+.office-member-empat:hover {
+  background-color: #242629;
+  color: #ffffff;
+}
+
+/* Responsif: 2 kolom pada layar kecil */
+@media (max-width: 1024px) {
+  .office-member-columns {
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 20px;
+  }
+}
+
+/* Responsif: 1 kolom pada layar sangat kecil */
+@media (max-width: 768px) {
+  .office-member-columns {
+    grid-template-columns: 1fr; 
+  }
+}
+/* ------------------ */
+/* End of Office Member */
+/* ------------------ */
+
+/* ------------------ */
+/* Result */
+/* ------------------ */
+.result-container header {
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.result {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.result-column {
+  text-align: center;
+}
+
+.result-column h2 {
+  font-size: 3em;
+  color: #5B38ED;
+}
+
+.result-column p {
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.result-button {
+  padding: 30px 40px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+
+}
+.result-button:hover {
+  background-color: #5B38ED;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .result {
+      flex-direction: column;
+  }
+  .result-column {
+      margin-bottom: 20px;
+  }
+}
+/* ------------------ */
+/* End of Result */
+/* ------------------ */
+
+/* ----------------- */
+/* Testimonial */
+/* ----------------- */
+.testimonial-container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.testimonial-container h1 {
+  font-size: 40px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.testimonial {
+  background-color: #F1F0E8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 45%;
+  min-width: 250px;
+  margin-bottom: 70px;
+}
+
+.testimonial p {
+  margin-top: 10px;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.testimonial .author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial .author .name {
+  font-weight: bold;
+}
+
+.testimonial .author .role {
+  color: #888;
+}
+
+.see-all-reviews {
+  background-color: #F1F0E8;
+  color: black;
+  padding: 20px 40px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.see-all-reviews:hover {
+  background-color: #555;
+  color: white;
+}
+/* ----------------- */
+/* End of Testimonial */
+/* ----------------- */
+
+/* ------------------ */
+/* Newsletter */
+/* ------------------ */
+/* Pastikan kontainer newsletter berada di tengah halaman */
+/* Memastikan newsletter-container berada di tengah tanpa merubah body */
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Memastikan teks terpusat */
+  margin: 0 auto; /* Memusatkan elemen secara horizontal */
+  margin-top: 300px;
+  position: relative;
+  top: 50%; /* Menempatkan di tengah vertikal */
+  transform: translateY(-50%); 
+}
+
+.newsletter-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.newsletter-container input[type="email"] {
+  width: 100%;
+  padding: 20px 80px;
+  border: none;
+  border-radius: 4px;
+  background-color: #111518;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.newsletter-container button {
+  background-color: #F1F0E8;
+  color: black;
+  border: none;
+  font-size: 16px;
+  padding: 24px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-container button:hover {
+  background-color: #555;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  .newsletter-container h1 {
+    font-size: 2em;
+  }
+}

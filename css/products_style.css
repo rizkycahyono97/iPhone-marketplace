@@ -1,0 +1,111 @@
+/* ---------------------- */
+/* products jumbotron */
+/* ---------------------- */
+.products-jumbotron {
+  background-color: #111518;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.products-jumbotron h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.breadcrumb {
+  list-style: none; /* Hilangkan bullet list */
+  gap: 5px; /* Beri jarak antar elemen */
+  padding: 0; /* Hilangkan padding */
+  margin: 0; /* Hilangkan margin */
+}
+
+.breadcrumb li {
+  display: inline; /* Pastikan item terlihat sejajar */
+  color: white;
+  font-size: 13px;
+}
+
+.breadcrumb a {
+  color: inherit; /* Ikuti warna teks bawaan */
+  text-decoration: none; /* Hilangkan garis bawah */
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/"; /* Tambahkan garis miring */
+  margin: 0 5px; /* Beri jarak sebelum dan sesudah */
+  color: inherit; /* Ikuti warna teks */
+}
+
+.breadcrumb li:last-child a {
+  font-weight: bold; /* Beri penekanan pada elemen terakhir (opsional) */
+}
+
+.breadcrumb-home a {
+  color: #758694;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-home a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .products-jumbotron h1 {
+      font-size: 3rem;
+  }
+
+  .products-jumbotron p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-jumbotron h1 {
+      font-size: 2rem;
+  }
+  .breadcrumb li {
+      font-size: 1rem;
+  }
+}
+/* ---------------------- */
+/* End of products jumbotron */
+/* ---------------------- */
+
+/* ---------------------- */
+/* products */
+/* ---------------------- */
+.products-shop-judul {
+  text-align: left;
+  padding-right: 950px;
+}
+
+.products-shop-judul p {
+  font-size: 12px; 
+  margin: 0; 
+  color: #758694; 
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .products-shop-judul p {
+    font-size: 10px; /* Ukuran font lebih kecil pada layar tablet */
+    padding: 0;
+  }
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 480px) {
+  .products-shop-judul p {
+    font-size: 9px; /* Ukuran font lebih kecil pada layar smartphone */
+    text-align: center; /* Pusatkan teks jika layar sangat kecil */
+    padding: 0;
+  }
+}
+/* ---------------------- */
+/* End of products */
+/* ---------------------- */
